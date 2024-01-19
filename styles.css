@@ -8,18 +8,20 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #1a1a1a;
+    perspective: 500px;
 }
 
 .card {
-    padding: 50px;
+    padding: 30px;
     background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    height: calc(2px*75);
-    width: calc(3.375px*75);
+    height: calc(2px*105);
+    width: calc(3.375px*105);
     border-radius: 5%;
     perspective: 1000px;
     box-shadow: #802b00b4 0px 20px 30px -10px;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+
 }
 
 .card-inner{
@@ -68,17 +70,33 @@ body {
 
 .backSide{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: rotateY(180deg);
     font-family:monospace;
     color: whitesmoke;
-
     .aboutMe{
+        width: 60%;
+        text-align: left;
+        align-self: flex-start;
         .header{
             font-family: MoonSpace;
+            font-size: 20px;
         }
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:flex-end;  
+        align-self: flex-end; 
+        a{
+            font-size: 30px;
+            text-decoration: none;  
+            color: whitesmoke;  
+            margin: 2px;
+        } 
     }
 }
 
