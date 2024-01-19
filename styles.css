@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'MoonSpace'; /*a name to be used later*/
+    src: url('assets/Moonstar.ttf'); /*URL to font*/
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+
+.card {
+    padding: 50px;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: calc(2px*75);
+    width: calc(3.375px*75);
+    border-radius: 5%;
+    perspective: 1000px;
+    box-shadow: #802b00b4 0px 20px 30px -10px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-inner{
+    display: flex;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.frontSide, .backSide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.frontSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .avatar{
+        object-fit: cover;
+        width: 62.5px;
+        height: 62.5px;
+        border-radius: 100%;
+        margin-bottom: 12.5px;
+        box-shadow: 9px 9px 0px 0px whitesmoke;
+    }
+    name{
+        color: whitesmoke;
+        font: bolder;
+        font-family:MoonSpace;
+        font-size: 29px;
+    }
+    desc{
+        color: whitesmoke;
+        font: bold;
+        font-family: monospace;
+        font-size: 14px;
+    }
+}
+
+.backSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    font-family:monospace;
+    color: whitesmoke;
+
+    .aboutMe{
+        .header{
+            font-family: MoonSpace;
+        }
+    }
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
