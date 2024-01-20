@@ -100,6 +100,6 @@ body {
     }
 }
 
-.card:hover{
+.card:hover, .card:focus, .card:active{
     transform: rotateY(180deg);
 }
