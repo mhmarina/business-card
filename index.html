@@ -5,30 +5,35 @@
           href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
         <script src="script.js"></script>
+        <title>Virtual Card</title>
+        <link rel="icon" href="assets\wings.png">
     </head>
     <body>
-        <div class="card">
-            <div class="card-inner">
-                <div class="frontSide">
-                    <image class="avatar" src="assets\wings.png" alt="my avatar"></image>
-                    <name>Marina Nasralla</name>
-                    <desc>Programmer</desc>    
-                </div>
-                <div class="backSide">
-                    <div class="aboutMe">
-                        <div class="header">About Me</div>
-                        My name is Marina, I like to paint, watch movies, read books and comics, eat, game and program
+        <div class=container>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="frontSide">
+                        <image class="avatar" src="assets\wings.png" alt="my avatar"></image>
+                        <name>Marina Nasralla</name>
+                        <desc>Programmer</desc>    
                     </div>
-                    <div class="links">
-                        <a href="http://www.linkedin.com/in/marina-nasralla-a68033251" target="_blank" class="fa fa-linkedin-square
-                        " aria-hidden="true"/>
-                        <a href="https://github.com/mhmarina" target="_blank" class="fa fa-github-square" aria-hidden="true"/>
-                        <a href="https://mnasral2.myportfolio.com/work" target="_blank" class="fa fa-pencil-square" aria-hidden="true"/>
-                        <a href="https://mhmarina.itch.io/" target="_blank" class="fa fa-gamepad" aria-hidden="true"/>
-                        <a/>
+                    <div class="backSide">
+                        <div class="aboutMe">
+                            <div class="header">About Me</div>
+                            My name is Marina, I like to paint, watch movies, read books and comics, eat, game and program
+                        </div>
+                        <div class="links">
+                            <a href="http://www.linkedin.com/in/marina-nasralla-a68033251" target="_blank" class="fa fa-linkedin-square
+                            " aria-hidden="true"/>
+                            <a href="https://github.com/mhmarina" target="_blank" class="fa fa-github-square" aria-hidden="true"/>
+                            <a href="https://mnasral2.myportfolio.com/work" target="_blank" class="fa fa-pencil-square" aria-hidden="true"/>
+                            <a href="https://mhmarina.itch.io/" target="_blank" class="fa fa-gamepad" aria-hidden="true"/>
+                            <a/>
+                        </div>
                     </div>
                 </div>
             </div>
+            <i onclick="flipCard()" class="fa fa-refresh" aria-hidden="true"></i>
         </div>
     </body>
 </html>
